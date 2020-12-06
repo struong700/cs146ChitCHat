@@ -1,0 +1,159 @@
+
+body {
+  animation: back 30s infinite alternate;
+  background-size:cover
+}
+.card-body{
+  text-align: center;
+}
+.button{
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.lowMap{
+  display: none;
+}
+@keyframes back {
+  0% {
+    background-image:url("images/Busan.jpg"), url("images/Myanmar.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  10% {
+    background-image:url("images/Myanmar.jpg"), url("images/South Africa.png");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  20% {
+    background-image:url("images/South Africa.png"), url("images/brazil1.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  30% {
+    background-image:url("images/brazil1.jpg"), url("images/Zealand.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  40% {
+    background-image:url("images/Zealand.jpg"),url("images/brazil2.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  50% {
+    background-image:url("images/brazil2.jpg"),url("images/Morocco.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  60% {
+    background-image:url("images/Morocco.jpg"),url("images/Greece.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  70% {
+    background-image:url("images/Greece.jpg"), url("images/Belgium.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  80% {
+    background-image:url("images/Belgium.jpg"), url("images/Budapest2.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  90% {
+    background-image:url("images/Budapest2.jpg"), url("images/New York.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+  100% {
+    background-image:url("images/New York.jpg");
+  width: 100%vw;
+  height: 100%vh;
+  }
+}
+.outer{
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+@media only screen and (max-width:480px) 
+{ 
+  .card-body {
+  border: 0;
+  color: white;
+  background: #e60000;
+  font-family: Helvetica;
+  font-size: 200%;
+}
+.center{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+  height: 5%;
+}
+.map{
+  pointer-events:none;
+  width: auto;
+  display: none;
+}
+.lowMap{
+  display: initial;
+}
+.button{
+  background-color:  #e60000;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px)
+{
+.card-body {
+  border: 0;
+  color: white;
+  background: #b700ff;
+  font-family: Helvetica;
+  font-size: 200%;
+}
+.center{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.map{
+  pointer-events:none;
+  width: auto;
+}
+.button{
+  background-color: #b700ff;
+}
+}
+
+@media only screen and (min-width: 769px) 
+{
+ .card-body {
+  border: 0;
+  color: white;
+  background: #1abc9c;
+  font-family: Helvetica;
+  font-size: 200%;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button{
+  background-color: #1abc9c;
+}
+}
