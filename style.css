@@ -73,16 +73,27 @@ body {
   height: 100%vh;
   }
   100% {
-    background-image:url("images/New York.jpg");
+  background-image:url("images/New York.jpg");
   width: 100%vw;
   height: 100%vh;
   }
 }
-.outer{
-  display: flex;
-  justify-content: flex-start;
+.nav{
+ display:flex;
+ flex-direction:row;
+ justify-content:center;
+ overflow: hidden;
+ width: 100%;
 
 }
+
+.nav a{
+  display: block;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+
 
 @media only screen and (max-width:480px) 
 { 

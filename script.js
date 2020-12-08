@@ -131,7 +131,7 @@ if ( document.URL.includes("USA.html") ) {
 
 function lowerAudio(){
   var audio = document.getElementById("Audio");
-  audio.volume = 0.0;
+  audio.volume = 0.2;
 }
 
 function toggle()
